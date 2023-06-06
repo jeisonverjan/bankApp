@@ -1,4 +1,4 @@
-# bankApp
+# BankApp
 FrontEnd banck application
 # Dummy Accounts
 jvm: 1111
