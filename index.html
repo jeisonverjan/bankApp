@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankisAPP</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript link -->
+    <script defer type="module" src="index.js"></script>
+    <!-- FontAwesome icon links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+        <div class="header-greeting">
+            <span class="user-name">Log in to get started!!</span>
+        </div>
+        <div class="header-logo">
+            <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+        <form class="header-form">
+            <input type="text" class="form-username" placeholder="User" required>
+            <input type="password" class="form-password" placeholder="Password" required>
+            <button class="logging-btn">&#x2192</button>
+        </form>
+    </header>
+    <div class="main-container">
+        <div class="main-container-box balance-container">
+            <div class="box-balance-text">
+                <span>Current Balance</span>
+                <span class="curr-date">As of 4/25/2023, 10:47 AM</span>
+            </div>
+            <div class="box-balance-number">
+                <span class="balance-number">$ 150,000.00</span>
+            </div>
+        </div>
+        <div class="main-container-box movements-transactions" >
+            <div class="movements-box">
+                <div class="movement">
+                    <span class="move-transaction">3- Deposit</span>
+                    <span class="move-date">4/25/2023</span>
+                    <span class="move-amount">$25,000.00</span>
+                </div>
+                <div class="movement">
+                    <span class="move-transaction">2- Withdraw</span>
+                    <span class="move-date">4/23/2023</span>
+                    <span class="move-amount">$5,000.00</span>
+                </div>
+                <div class="movement">
+                    <span class="move-transaction">1- Deposit</span>
+                    <span class="move-date">4/20/2023</span>
+                    <span class="move-amount">$1,000.00</span>
+                </div>
+                <div class="movement">
+                    <span class="move-transaction">1- Deposit</span>
+                    <span class="move-date">4/20/2023</span>
+                    <span class="move-amount">$1,000.00</span>
+                </div>
+            </div>
+            <div class="transactions-box">
+                <div class="transfer-box transfer">
+                    <span class="transaction-tittle">Transfer Money</span>
+                    <form action="" class="transaction-form">
+                        <input class="transfer-to" type="text" placeholder="Transfer to" required>
+                        <input class="transfer-amount" type="number" placeholder="Amount" required>
+                        <button class="transaction-btn transfer-btn">&#x2192</button>
+                    </form>
+                </div>
+                <div class="loan-box transfer">
+                    <span class="transaction-tittle">Request Loan</span>
+                    <form action="" class="transaction-form">
+                        <input class="loan-amount" type="number" placeholder="Amount" required>
+                        <button class="transaction-btn loan-btn">&#x2192</button>
+                    </form>
+                </div>
+                <div class="close-account-box transfer">
+                    <span class="transaction-tittle">Close account</span>
+                    <form action="" class="transaction-form">
+                        <input class="delete-user-ele" type="text" placeholder="Confirm user" required>
+                        <input class="delete-pin-ele" type="password" placeholder="Confirm Pin" required>
+                        <button class="transaction-btn delete-account-btn">&#x2192</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main-container-box movements-transactions footer">
+            <div class="averages">
+                <span>In: <span class="value in-value">$1,500.00</span></span>
+                <span>Out: <span class="value out-value">$1,500.00</span></span>
+                <span>Interest: <span class="value interest-value">$1,500.00</span></span>
+                <span>SORT <i class="fa-solid fa-sort"></i></span>
+            </div>
+            <div class="logout">
+                <span>You will be logged out in: <span class="timer-ele"></span></span>
+            </div>
+        </div>
+    </div>
+    
+  </body>
+</html>
